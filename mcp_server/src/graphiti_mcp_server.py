@@ -391,8 +391,6 @@ class GraphitiService:
                 logger.warning(
                     'No custom edge types configured - will use default RELATES_TO edge type'
                 )
-            else:
-                logger.info('Using default edge types (LLM-inferred)')
 
             logger.info(f'Using database: {self.config.database.provider}')
             logger.info(f'Using group_id: {self.config.graphiti.group_id}')
